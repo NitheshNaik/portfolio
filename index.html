@@ -6,21 +6,27 @@
     <title>Personal portfolio website</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/0478f32f83.js" crossorigin="anonymous"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
+    <div id="header">
     <div class="hero">
         <nav>
            <img src="nnnn.png" class="logo">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">HIRE ME</a></li>
 
             </ul>
         </nav>
-        <div class="detel">
+        <div id="home" class="detel">
             <h1>Hi! I'm Nithesh Naik</h1>
                 <h2>And I'm a <span class="changing-text">Coder</span></h2>
             <p>Thank you for taking the time to explore my portfolio. I look
@@ -36,13 +42,12 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="WhatsApp Image 2024-07-07 at 19.49.58_1f112e8f.jpg">
+                        <img src="D:\Downloads\my program files\portfolio\VID_20230906_145248_exported_4761~2_res.jpg">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>I believe in the importance of staying updated with the latest industry advancements and continuously
-                             pushing the boundaries of what's possible. I believe in the importance of staying updated with the
-                              latest industry advancements and continuously pushing the boundaries of what's possible.</p>
+                             pushing the boundaries of what's possible.</p>
                              
                               <div class="tab-titles">
                                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -90,7 +95,6 @@
                     <p>As a passionate web developer. I specialize in creating dynamic, user-friendly websites and web applications that deliver exceptional user experiences.</p>
                     <a href="#">Learn more</a>
                 </div>
-
                 <div>
                     <i class="fa-solid fa-layer-group"></i>
                     <h2>3-D Modelling</h2>
@@ -107,7 +111,35 @@
             </div>
         </div>
     </div>
-   
+   <!-----------contact---->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>nitheshbnaik@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8861106739</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                         <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 Portfolio from Nithesh Naik</p>
+    </div>
+</div>
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
