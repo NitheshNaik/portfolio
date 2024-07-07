@@ -13,8 +13,7 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #000;
-    
+    background: #000;   
 }
 
 nav {
@@ -26,9 +25,12 @@ nav {
     justify-content: space-between;
 }
 
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0 ;
+}
 nav ul li {
-    display: inline-block;
-    list-style: none;
     margin: 10px 20px;
 }
 
@@ -51,7 +53,6 @@ nav ul a::after{
 }
 nav ul a:hover::after {
     width: 100%;
-    color: #ff004f;
 }
 
 .detel {
@@ -151,12 +152,10 @@ nav ul a:hover::after {
     position: absolute;
     left: 0;
     bottom: -8px;
-
-transition: 0.5s;
+    transition: 0.5s;
 }
 .tab-links:hover::after {
     width: 50%;
-    color: #ff004f;
 }
 
 
@@ -181,7 +180,6 @@ transition: 0.5s;
 
 .tab-contents{
     display: none;
-
 }
 
 .tab-contents.active-tab{
@@ -248,3 +246,126 @@ transition: 0.5s;
     50% { content: 'Developer'; }
     100% { content: 'Coder'; }
 }
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+
+    .hero {
+        height: auto; /* Adjust height as needed */
+        padding-top: 100px; /* Example padding adjustment */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center; /* Center align nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin between nav items */
+    }
+
+    .detel {
+        margin: 20% 0; /* Example margin adjustment */
+        text-align: center; /* Center align text */
+    }
+
+    .about-col-1 img {
+        margin-left: 0; /* Reset margin for the image */
+    }
+
+    .tab-links {
+        margin: 10px 0; /* Adjust margin between tab links */
+    }
+
+    .services-list div {
+        padding: 20px; /* Adjust padding for service items */
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Full width for contact sections */
+        text-align: center; /* Center align contact sections */
+    }
+
+    form input, form textarea {
+        width: 100%; /* Full width input fields */
+        margin: 10px 0; /* Adjust margin between form fields */
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    form .btn2 {
+        padding: 12px 40px; /* Adjust button padding */
+    }
+}
+
+    /*--------contact--*/
+    .contact-left{
+        flex-basis: 35%;
+
+    }
+
+    .contact-right{
+        flex-basis: 60%;
+        
+    }
+
+    .contact-left p{
+        margin-top:30px ;
+    }
+    
+    .contact-left p i{
+        color: #ff004f;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+
+    .social-icons a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color:#ababab ;
+        display: inline-block;
+        transition: transform 0.5s;
+
+    }
+
+    .social-icons a:hover{
+        color: #ff004f;
+        transform: translateY(-5px);
+
+    }
+
+    .contact-right form{
+        width: 100%;
+
+    }
+
+    form input,form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+
+    }
+
+    form .btn2{
+        padding: 14px 60px;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        margin-top: 20px;
+
+    }
