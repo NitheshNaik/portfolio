@@ -4,8 +4,7 @@ This GitHub repository contains the source code for my portfolio website, showca
 🚀 Visit My Portfolio
 View Live: https://nitheshnaik.github.io/portfolio/#
 
-🧑💻 About Me
-Hi, I'm Nithesh, a passionate  Web Developer,Designer. I love creating impactful web applications and continuously learning new technologies.
+🧑Hi, I'm Nithesh, a passionate  Web Developer,Designer. I love creating impactful web applications and continuously learning new technologies.
 
 💻 Skills: HTML, CSS, JavaScript, React, Java, etc.
 
